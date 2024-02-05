@@ -1,3 +1,27 @@
-.b{
-    height: auto;
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9299F0
+}
+
+.nav{
+    padding-right: 10%;
+}
+
+.logo{
+    position: relative;
+    left: 12%;
+    width: 27vh;
+}
+
+li{
+    display: inline-block;   
+}
+
+.nav-link{
+    color: #386C5F;
+    position: relative;
+    font-size: 16px;
+    left: 38%
 }
