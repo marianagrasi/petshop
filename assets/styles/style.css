@@ -33,22 +33,27 @@ header {
     transition: 0.5s;
     z-index: 1;
     left: 11%;
+    box-shadow: 0 0 10px #000;
+    background: rgba(0,0,0,0.5);
 }
+
 .logo {
     position: relative;
     font-size: 30px;
-    color: #584aa5;
+    color: #aea3eb;
     letter-spacing: 2px;
     font-weight: 800;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-    right: 20%;
+    right: 20%;  
 }
+
 
 .nav {
     display: flex;
     align-items:center;
+    
 }
 
 .nav li {
@@ -58,7 +63,7 @@ header {
 }
 
 .nav li a {
-    color: #374177;
+    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Sora', sans-serif;
