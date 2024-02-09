@@ -271,28 +271,30 @@ header {
 /*Footer*/
 footer{
     text-align: center;
-    background: linear-gradient(to right, #737BD0, #a9aabb);
+    background: #44444a8e;
 	color: #6c83e8;
     font-size: 18px;
+
 }
 footer .equipo{
     color: white;
     position: relative;
-    bottom: 3rem;
-    left: 3%;
+    top: 6rem;
+    right: 4.5%;
     font-size: 16pt;
+
 }
 
 footer .logo{
     position: relative;
-    left: -36%;
-    bottom: 2rem;
+    left: 36%;
+    top: 14rem;
 }
 
 footer .nosotros{
     position: relative;
-    left: 23rem;
-    bottom: 18.5rem;
+    left: 9.5rem;
+    bottom: 13.5rem;
 }
 
 footer .card{
