@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@300&display=swap');
-
 
 *{
     margin: 0;
@@ -9,6 +7,8 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+
 
 
 
@@ -136,11 +136,7 @@
     color: #000;
 }
 
-<<<<<<< HEAD
-
-=======
-/* animacion */
->>>>>>> 6969f2cc47ff92ba3259b0f68a271d47b42df6d8
+/* animation */
 .carousel .list .item:nth-child(1){
     z-index: 1;
 }
@@ -175,11 +171,7 @@
 .carousel .list .item:nth-child(1) .content .buttons{
     animation-delay: 1.8s!important;
 }
-<<<<<<< HEAD
-
-=======
-/* creacion de animacion*/
->>>>>>> 6969f2cc47ff92ba3259b0f68a271d47b42df6d8
+/* create animation when next click */
 .carousel.next .list .item:nth-child(1) img{
     width: 150px;
     height: 220px;
@@ -227,7 +219,7 @@
     z-index: 1000;
     width: 0%;
     height: 3px;
-    background-color: #76daff;
+    background-color: #f1683a;
     left: 0;
     top: 0;
 }
@@ -241,12 +233,7 @@
     to{width: 0}
 }
 
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> 6969f2cc47ff92ba3259b0f68a271d47b42df6d8
 .carousel.prev .list .item:nth-child(2){
     z-index: 2;
 }
@@ -301,78 +288,17 @@
     }
 }
 
-<<<<<<< HEAD
+
 /*Catalogo*/
 
 
 
-=======
-/*Cartas de catalogo*/
-.bycats .heading{
-    display: flex;
-    justify-content: center;
-}
-.bycats .heading > span{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    margin-right: 20px;
-}
-
-.bycats .heading > span,
-.opt-trigger {
-    height: 44px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    -webkit-tap-highlight-color: transparent;
-    cursor:pointer;
-}
-
-.sort-list .wrap{
-    position: relative;
-}
-.sort-list .wrap ul{
-      position: absolute;
-      text-align: left;
-      top: 50px;
-      left: 0;
-      right: 0;
-      background-color:#ebf3f4;
-      box-shadow:#000518;
-      z-index: 10;
- 
-}
-
-.sort-list ul li a {
-    display: block;
-    padding: 5px 20px;
-    transition: var(--transition-background, var(--transition-color));
-}
-.sort-list ul li a:hover,
-sort-list ul li.activate a{
-    background-color:#6d89f6;
-    color: var(--white-color);
-}
->>>>>>> 6969f2cc47ff92ba3259b0f68a271d47b42df6d8
 img {
     width: 320px;
     height: 340px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
-<<<<<<< HEAD
-=======
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:15%;
-    height: 70px;
-    top: 0;
-    position: fixed;
-    width: 100%;
-}
->>>>>>> 6969f2cc47ff92ba3259b0f68a271d47b42df6d8
 .scroll{
     background-color: aliceblue;
     box-shadow: .1rem .2rem .3rem #333;
@@ -397,12 +323,8 @@ header{
 }
 .contenedor>div{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    background-color: #f5f5f5;
     border-radius: 20px;
-<<<<<<< HEAD
     background-color: #eee;
-=======
->>>>>>> 6969f2cc47ff92ba3259b0f68a271d47b42df6d8
 }
 .contenedor>div:hover{
     background-color: #abc8f3;
@@ -442,10 +364,9 @@ header{
 }
 .informacion button:hover{
     background-color: #d9e5f9;
-<<<<<<< HEAD
 }
 
 
-=======
-}
->>>>>>> 6969f2cc47ff92ba3259b0f68a271d47b42df6d8
+
+
+
