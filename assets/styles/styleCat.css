@@ -234,8 +234,6 @@
 }
 
 
-/* prev click */
-
 .carousel.prev .list .item:nth-child(2){
     z-index: 2;
 }
@@ -325,7 +323,6 @@ img {
 }
 .contenedor>div{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    background-color: #f5f5f5;
     border-radius: 20px;
     background-color: #eee;
 }
