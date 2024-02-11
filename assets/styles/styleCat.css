@@ -12,8 +12,6 @@
 
 
 
-
-
 /* carrusel */
 .carousel{
     height: 100vh;
@@ -138,7 +136,11 @@
     color: #000;
 }
 
+<<<<<<< HEAD
+
+=======
 /* animacion */
+>>>>>>> 6969f2cc47ff92ba3259b0f68a271d47b42df6d8
 .carousel .list .item:nth-child(1){
     z-index: 1;
 }
@@ -173,7 +175,11 @@
 .carousel .list .item:nth-child(1) .content .buttons{
     animation-delay: 1.8s!important;
 }
+<<<<<<< HEAD
+
+=======
 /* creacion de animacion*/
+>>>>>>> 6969f2cc47ff92ba3259b0f68a271d47b42df6d8
 .carousel.next .list .item:nth-child(1) img{
     width: 150px;
     height: 220px;
@@ -235,6 +241,12 @@
     to{width: 0}
 }
 
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> 6969f2cc47ff92ba3259b0f68a271d47b42df6d8
 .carousel.prev .list .item:nth-child(2){
     z-index: 2;
 }
@@ -289,6 +301,12 @@
     }
 }
 
+<<<<<<< HEAD
+/*Catalogo*/
+
+
+
+=======
 /*Cartas de catalogo*/
 .bycats .heading{
     display: flex;
@@ -335,12 +353,15 @@ sort-list ul li.activate a{
     background-color:#6d89f6;
     color: var(--white-color);
 }
+>>>>>>> 6969f2cc47ff92ba3259b0f68a271d47b42df6d8
 img {
     width: 320px;
     height: 340px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
+<<<<<<< HEAD
+=======
 header{
     display: flex;
     align-items: center;
@@ -351,6 +372,7 @@ header{
     position: fixed;
     width: 100%;
 }
+>>>>>>> 6969f2cc47ff92ba3259b0f68a271d47b42df6d8
 .scroll{
     background-color: aliceblue;
     box-shadow: .1rem .2rem .3rem #333;
@@ -377,6 +399,10 @@ header{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     background-color: #f5f5f5;
     border-radius: 20px;
+<<<<<<< HEAD
+    background-color: #eee;
+=======
+>>>>>>> 6969f2cc47ff92ba3259b0f68a271d47b42df6d8
 }
 .contenedor>div:hover{
     background-color: #abc8f3;
@@ -416,4 +442,10 @@ header{
 }
 .informacion button:hover{
     background-color: #d9e5f9;
+<<<<<<< HEAD
 }
+
+
+=======
+}
+>>>>>>> 6969f2cc47ff92ba3259b0f68a271d47b42df6d8
