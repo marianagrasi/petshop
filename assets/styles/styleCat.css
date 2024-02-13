@@ -43,7 +43,7 @@
     padding-right: 30%;
     box-sizing: border-box;
     color: #fff;
-    text-shadow: 0 5px 10px #0004;
+    text-shadow: 0 25px 20px #000;
 }
 
 .carousel .list .item .title,
@@ -167,6 +167,7 @@
 }
 .carousel .list .item:nth-child(1) .content .des{
     animation-delay: 1.6s!important;
+    font-size: 18pt;
 }
 .carousel .list .item:nth-child(1) .content .buttons{
     animation-delay: 1.8s!important;
