@@ -15,10 +15,6 @@
     --third: #f2f2f2;
 }
 
-
-a{
-    text-decoration: none;
-}
 header{
     position: absolute ;
     top: 0;
@@ -42,13 +38,6 @@ header a{
     margin-right: 40px;
 }
 
-.logo {
-    position: absolute;
-    font-size: 3px;
-    color: #ffffff;
-   
-    
-}
 
 .nav {
     display: flex;
