@@ -197,7 +197,7 @@
         <div class="informacion">
             <p>Collar</p>                   
             <p class="precio">$27<span>.500</span></p>
-            <button class="collar2" id="btnComprar1">Comprar</button>
+            <button class="collar2">Comprar</button>
         </div>
     </div>
     <div>
@@ -348,6 +348,7 @@
   </section>
 
 
+
  <!-- Modal detalle del producto-->
 
  <section>
@@ -388,44 +389,52 @@
       </div>
     </div>
 </div>
-  </section>
+</section>
 
-  <section>
-    <!-- Modal dinámico para detalles de producto -->
-    <div id="dynamicProductModal" class="modal1">
-        <div class="modal-content1 container flex">
-            <div class="left">
-                <div class="main_image">
-                    <img id="modalProductImage" alt="Producto" class="slide">
-                </div>
-                <div class="option flex">
-                    <!-- Puedes agregar las miniaturas aquí si es necesario -->
-                </div>
+<section>
+    <div class="modal1" >
+        <div class="container flex">
+          <div class="left">
+            <div class="main_image">
+              <img src="../assets/img/Catalogo/gatocollar1.jpg" class="slide">
             </div>
-            <div class="right">
-                <h3 id="modalProductTitle" class="h3"></h3>
-                <h4 id="modalProductPrice" class="precio"><small>$</small></h4>
-                <p id="modalProductDescription" class="p"></p>
-                <h5 class="h5">Color-Rose Gold</h5>
-                <div class="color flex1">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <h5 class="h5">Cantidad</h5>
-                <div class="add flex1">
-                    <span class="add-span">-</span>
-                    <label class="add-label">1</label>
-                    <span class="add-span">+</span>
-                </div>
-                <button class="but" onclick="cerrarModal('dynamicProductModal')">Agregar al carrito</button>
-                <br> <br>
-                <button class="modal_close close1" onclick="cerrarModal('dynamicProductModal')">Cerrar</button>
+            <div class="option flex">
+              <img src="../assets/img/Catalogo/gatocollar2.jpg" onclick="img('../assets/img/Catalogo/gatocollar2.jpg')">
+              <img src="../assets/img/detallecatalogo/collardetalle2.png" onclick="img('../assets/img/detallecatalogo/collardetalle2.png')">
+              <img src="../assets/img/detallecatalogo/collardetalle22.png" onclick="img('../assets/img/detallecatalogo/collardetalle22.png')">
+              <img src="../assets/img/detallecatalogo/collardetalle222.png" onclick="img('../assets/img/detallecatalogo/collardetalle222.png')">
             </div>
+          </div>
+          <div class="right">
+            <h3>Collar Rosa</h3>
+            <h4> <small>$</small>27.500 </h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt sequi est repudiandae qui commodi quis repellat tempore laudantium. Neque, error! </p>
+            <h5>Color-Rose Gold</h5>
+            <div class="color flex1">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+             
+            </div>
+            <h5>Cantidad</h5>
+            <div class="add flex1">
+              <span>-</span>
+              <label>1</label>
+              <span>+</span>
+            </div>
+            <button class="but">Agregar al carrito</button>
+            <br>  <br>  
+            <button class="modal_close1">Cerrar</button>
+          </div>
         </div>
     </div>
+
 </section>
+ 
+
+
+
 <footer>
     <img src="../assets/img/logopetshop.png" alt="Logo" width="300" class="mb-3">
     <p> Copyright © 2024 Equipo Petshop Todos los derechos reservados Medellín - Colombia. </p>
@@ -471,6 +480,7 @@ src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
 </script>
 
 <script src="../controllers/app.js"></script>
-<script src="../controllers/modal.js"></script>
+<script src="../controllers/modal3.js"></script>
+
 </body>
 </html>
