@@ -66,7 +66,7 @@ function img(anything) {
  /*Collar2 */
   let openModal = document.querySelector('.collar2');
   let modal = document.querySelector('.modal');
-  let closeModal = document.querySelector('.modal_close');
+  let closeModal= document.querySelector('.modal_close');
   
   openModal.addEventListener('click', (e)=>{
       e.preventDefault();
@@ -77,3 +77,21 @@ function img(anything) {
       e.preventDefault();
       modal.classList.remove('modal--show');
   });
+
+
+
+   /*Collar1 */
+   let openModal1 = document.querySelector('.collar1');
+   let modal1 = document.querySelector('.modal1');
+   let closeModal1 = document.querySelector('.modal_close1');
+   
+   openModal1.addEventListener('click', (e)=>{
+       e.preventDefault();
+       modal1.classList.add('modal--show');
+   });
+   
+   closeModal1.addEventListener('click', (e)=>{
+       e.preventDefault();
+       modal1.classList.remove('modal--show');
+   });
+  
