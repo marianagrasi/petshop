@@ -22,7 +22,7 @@ body {
 
 /*Header section*/
 header {
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     height: 15%;
@@ -271,7 +271,7 @@ header {
 /*Footer*/
 footer{
     text-align: center;
-    background-color:#008B69;
+    background-color:#474554;
 	color: #ffffff;
     font-size: 18px;
 
