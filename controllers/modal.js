@@ -1,5 +1,5 @@
 // Función para abrir el modal con información dinámica
-function abrirModal1(producto) {
+/*function abrirModal1(producto) {
     var modal = document.getElementById("dynamicProductModal");
 
     // Configura los elementos del modal con la información del producto
@@ -48,4 +48,4 @@ document.getElementById("btnComprar3").addEventListener("click", function() {
 function cerrarModal(modalId) {
     var modal = document.getElementById(modalId);
     modal.style.display = "none";
-}
+}*/
