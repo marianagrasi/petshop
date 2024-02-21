@@ -9,9 +9,17 @@
     
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-          <div class="logo"><img src="./assets/img/logopetshop.png" width="100" height="100" ></div>
+    <header id="navbarprincipal">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/img/logooo.png"
+              alt="Logo"
+              class="logo"
+              width="350"
+            />
+          </a>
           <ul class="nav">
             <li><a href="#">Inicio</a></li>
               <li><a href="./views/catalogoPerros.html">Catálogo Perro</a></li>
@@ -19,11 +27,12 @@
               <li><a href="#">Equipo</a></li>
           </ul>
           <ul class="util">
-            <li  id="openSidebar"><a href="#"><ion-icon name="bag-outline"></ion-icon></a>
+            <li><a href="#"><ion-icon name="bag-outline"></ion-icon></a>
           <span class="number"></span>
           </li> 
           </ul>
-        </nav>
+        </div>
+      </nav>
  </header>
 
  <div id="sidebar">
@@ -47,25 +56,88 @@
            <a href="./views/catalogoPerros.html" class="switch-btn" onclick="switchBanner('right');">Perro</a>
         </div>
     </div>
+
+
+    <section id="acerca-de">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="fw-bold mb-4">NOSOTROS</h2>
+            <p>
+              <b>  En "PetShop" , no solo somos una tienda de mascotas; somos amantes de los animales comprometidos con proporcionar a tus mascotas los mejores productos. <br> 
+
+             <br> Nuestra pasión por los animales es el corazón de nuestro negocio, y nos esforzamos por ofrecer una experiencia única y positiva para ti y tus queridos compañeros peludos.</b>
+            </p>
+         
+
+          
+          </div>
+          <div class="col-md-6">
+            <img src="./assets/img/nosotros.jpg" alt="Acerca de Nosotros" class="img-fluid" >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="servicios" id="servicios">
+      <div class="title-cards">
+        <h2 class="fw-bold mb-5">SERVICIOS</h2>
+      </div>
+      <div class="container-card">
+
+        <div class="card">
+          <figure>
+            <img src="./assets/img/perrita.jpg" />
+          </figure>
+          <div class="contenido-card">
+            <h3 class="fw-bold mb-5">ACCESORIOS PARA PERROS</h3>
+            <p>
+              Desde elegantes collares y correas hasta cómodas camas y juguetes interactivos, cada artículo ha sido cuidadosamente seleccionado para proporcionar comodidad, seguridad y diversión a tu perro. Encuentra el toque perfecto que hará que la experiencia de cuidar a tu perro sea aún más especial.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <figure>
+            <img src="./assets/img/gatita.jpg" />
+          </figure>
+          <div class="contenido-card">
+            <h3 class="fw-bold mb-5">ACCESORIOS PARA GATOS</h3>
+            <p>
+              Desde rascadores elegantes y juguetes interactivos hasta cómodas camas y arneses de moda, nuestra selección de accesorios para gatos combina estilo y funcionalidad. Cada artículo ha sido elegido para satisfacer las necesidades naturales de juego, descanso y exploración de tu gato. 
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+ 
+
+    
+
+
+
+
+
+    
   </main>
 
-  <footer>
-    <img src="./assets/img/logopetshop.png" alt="Logo" width="300" class="mb-3">
+  <footer id="equipo">
+    <img src="./assets/img/logooo.png" alt="Logo" width="300" class="mb-3">
     <p> Copyright © 2024 Equipo Petshop Todos los derechos reservados Medellín - Colombia. </p>
     <div class="d-flex justify-content-center">
 
       <div class="card p-3">
-        <img src="./assets/img/git1.png" class="imggit mb-2">
+        <img src="./assets/img/gitt2.png" class="imggit mb-2">
         <a href="https://github.com/Estefap12" target="_blank">Estefanía Pérez</a>
       </div>
   
       <div class="card p-3">
-        <img src="./assets/img/gitt3.png" class="imggit mb-2">
+        <img src="./assets/img/git1.png" class="imggit mb-2">
         <a href="https://github.com/yisus0122" target="_blank">Jesús Angulo</a>
       </div>
   
       <div class="card p-3">
-        <img src="./assets/img/gitt2.png" class="imggit mb-2">
+        <img src="./assets/img/gitt3.png" class="imggit mb-2">
         <a href="https://github.com/marianagrasi" target="_blank">Mariana Granados</a>
       </div>
       
