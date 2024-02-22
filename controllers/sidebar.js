@@ -8,7 +8,7 @@
   function agregarAlCarrito() {
     var nombreProducto = document.querySelector('.right h3').innerText;
     console.log("Nombre del producto:", nombreProducto);
-        // Verificar si 'cartContent' está presente
+
         var cartContent = document.getElementById('cartContent');
         if (!cartContent) {
           console.error("Elemento 'cartContent' no encontrado en el DOM.");
@@ -26,8 +26,7 @@
     
         console.log("Producto añadido al carrito:", nombreProducto);
       }
-    
-      // Otras lógicas o inicializaciones...
+  
     
       // Ejemplo de cómo podrías llamar a la función al hacer clic en algún botón
       var botonAgregarCarrito = document.getElementById('botonAgregarCarrito');
