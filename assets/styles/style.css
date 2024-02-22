@@ -51,7 +51,6 @@ li {
   display: flex;
   align-items: center;
   position: relative;
-  left: 50%;
 }
 
 .util li {
@@ -446,46 +445,34 @@ h2 {
 
 /*Componente de barra lateral*/
 #sidebar {
-    height: 100vh;
-    width: 42vh;
-    position: fixed;
-    top: 0;
-    right: 0; /* Cambiado a la derecha */
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    color: white;
-    z-index: 2;
+  width: 0;
+  position: fixed;
+  height: 100%;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  top: 0;
+  right: 0; 
+  z-index: 1;
 }
 
-#sidebar p, #sidebar a {
-    padding: 15px;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-#sidebar a:hover {
-    color: #f1f1f1;
-}
-
-#sidebar .closebtn {
-    position: absolute;
-    top: -1rem;
-    right: 0; 
-    font-size: 36px;
-    margin-right: 2px;
+#sidebar p {
+  color: black; /* Cambiar color del texto a negro */
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
 }
 
 #openSidebar {
-    margin-left: 10px; /* Cambiado a la izquierda */
-    cursor: pointer;
+  cursor: pointer;
 }
 
+.closebtn {
+  color: white; /* Cambiar color del botón a blanco */
+}
 .number {
     background-color: red;
     color: white;

@@ -17,7 +17,10 @@
 </head>
 <body>
     <header>
-
+      <div id="sidebar">
+        <p class="closebtn" onclick="closeSidebar()">&times;</p>
+        <div id="cartContent"></div>
+      </div>
     </header>
 
    <!-- Banner-->
@@ -476,7 +479,7 @@
           <label>1</label>
           <span>+</span>
         </div>
-        <button class="but">Agregar al carrito</button>
+        <button class="but" onclick="agregarAlCarrito()">Agregar al carrito</button>
         <br>  <br>  
         <button class="modal_close15">Cerrar</button>
       </div>
@@ -847,6 +850,7 @@
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="../controllers/appDog.js"></script>
 <script src="../controllers/appModalDog.js"></script>
+<script src="../controllers/sidebar.js"></script>
 
 </body>
 </html>
