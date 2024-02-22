@@ -145,7 +145,6 @@ body{
     height: 100vh;   
 }
 .swiper-slide{
-    
     cursor: pointer;
     transition: 0.3s;
 }
@@ -253,7 +252,7 @@ main{
     padding: 100px 0;
     background: #ffffff;
  }
- section.call-up{
+.call-up{
     width: 100%;
     padding: 0 100px;
     display: flex;
@@ -480,6 +479,7 @@ img {
 }
  /*Modal de collares de perro*/
 .modal12{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -509,6 +509,7 @@ img {
 
 /*Modal 2 collar*/
 .modal13{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -535,6 +536,7 @@ img {
 }
 /*Modal 3 collar*/
 .modal14{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -563,6 +565,7 @@ img {
 }
 /*Modal 1 pañuelo*/
 .modal15{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -592,6 +595,7 @@ img {
 
 /*Modal 2 pañuelo*/
 .modal16{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -620,6 +624,7 @@ img {
 }
 /*Modal 3 pañuelo*/
 .modal17{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -648,6 +653,7 @@ img {
 }
 /*Modal 1 arnes*/
 .modal18{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -676,6 +682,7 @@ img {
 }
 /*Modal 2 arnes*/
 .modal19{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -704,6 +711,7 @@ img {
 }
 /*Modal 3 arnes*/
 .modal20{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -733,6 +741,7 @@ img {
 
 /*Modal 1 sueter*/
 .modal21{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -762,6 +771,7 @@ img {
 
 /*Modal 2 sueter*/
 .modal22{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -791,6 +801,7 @@ img {
 
 /*Modal 3 sueter*/
 .modal23{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
