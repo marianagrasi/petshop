@@ -51,7 +51,6 @@ li {
   display: flex;
   align-items: center;
   position: relative;
-  left: 50%;
 }
 
 .util li {
@@ -443,7 +442,46 @@ h2 {
   text-shadow: 2px 2px 4px #f890b1;
 }
 
+
+/*Componente de barra lateral*/
+#sidebar {
+  width: 0;
+  position: fixed;
+  height: 100%;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  top: 0;
+  right: 0; 
+  z-index: 1;
+}
+
+#sidebar p {
+  color: black; /* Cambiar color del texto a negro */
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+#openSidebar {
+  cursor: pointer;
+}
+
+.closebtn {
+  color: white; /* Cambiar color del botón a blanco */
+}
+.number {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 5px;
+}
 h4 {
   color: #485000;
   border-bottom: 2px solid #fe982a;
 }
+

@@ -120,6 +120,13 @@ body{
 }
 .banner-middle{
     position: absolute;
+
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 1;
+    display: flex;
+    gap: 20px;
     top: 0;
     left: 45%;
     width: 45%;
@@ -229,6 +236,18 @@ body{
     text-transform: uppercase;
     font-weight: 300;
 }
+
+.arrows{
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    z-index: 1;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    }
+
 .contentone .descripcion p {
     font-weight: 200;
     letter-spacing: 1px;
@@ -1028,6 +1047,5 @@ button {
         display: none;
     }
 }
-
 
 
