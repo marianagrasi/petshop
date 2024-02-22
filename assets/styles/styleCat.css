@@ -23,7 +23,6 @@ body{
     
 }
 
-
 /* Banner */
 .banner{
     position: relative;
@@ -120,13 +119,6 @@ body{
 }
 .banner-middle{
     position: absolute;
-
-    bottom: 50px;
-    left: 50%;
-    width: max-content;
-    z-index: 1;
-    display: flex;
-    gap: 20px;
     top: 0;
     left: 45%;
     width: 45%;
@@ -146,8 +138,6 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
 }
-
-
 .swiper-cat,
 .swiper-cat1,
 .swiper-cat2{
@@ -155,7 +145,6 @@ body{
     height: 100vh;   
 }
 .swiper-slide{
-    
     cursor: pointer;
     transition: 0.3s;
 }
@@ -199,7 +188,7 @@ body{
     transform-origin: left;
     line-height: 1em;
 }
-.banner-right .number{
+.banner-right .number1{
     position: absolute;
     font-size: 5em;
     top: 10%;
@@ -236,18 +225,6 @@ body{
     text-transform: uppercase;
     font-weight: 300;
 }
-
-.arrows{
-    position: absolute;
-    top: 80%;
-    right: 52%;
-    z-index: 1;
-    width: 300px;
-    max-width: 30%;
-    display: flex;
-    gap: 10px;
-    }
-
 .contentone .descripcion p {
     font-weight: 200;
     letter-spacing: 1px;
@@ -268,17 +245,14 @@ body{
 }
 .contentone .descripcion a:hover{
     color: var(--primary),
-
 }
-
-
- /*Main*/
- main{
+/*Main*/
+main{
     width: 100%;
     padding: 100px 0;
     background: #ffffff;
  }
- section.call-up{
+.call-up{
     width: 100%;
     padding: 0 100px;
     display: flex;
@@ -538,6 +512,7 @@ img {
 
 /*Modal 2*/
 .modal1{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -564,6 +539,7 @@ img {
 }
 /*Modal 3 collar*/
 .modal2{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -592,6 +568,7 @@ img {
 }
 /*Modal 1  pañuelo*/
 .modal3{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -620,6 +597,7 @@ img {
 }
 /*Modal 2  pañuelo*/
 .modal4{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -645,6 +623,7 @@ img {
 }
 /*Modal 3  pañuelo*/
 .modal5{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -670,6 +649,7 @@ img {
 }
 /*Modal 2 arnes*/
 .modal6{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -696,6 +676,7 @@ img {
 
 /*Modal 2  arnes*/
 .modal7{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -721,6 +702,7 @@ img {
 }
 /*Modal 3  arnes*/
 .modal8{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -746,6 +728,7 @@ img {
 }
 /*Modal 1 sueter*/
 .modal9{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -771,6 +754,7 @@ img {
 }
 /*Modal 2 sueter*/
 .modal10{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -796,6 +780,7 @@ img {
 }
 /*Modal 3 sueter*/
 .modal11{
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
@@ -1032,7 +1017,7 @@ button {
 }
 
 .banner-descuent .banner23 .women{
-    position: relative;
+  
     bottom: -33px;
     padding:10px;
     flex:1 1 250px;
