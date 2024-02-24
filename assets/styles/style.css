@@ -25,6 +25,7 @@ body {
   align-items: center;
   background-color: #f890b1;
   height: 70px;
+  z-index: 1000
 }
 
 .nav {

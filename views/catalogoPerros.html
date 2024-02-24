@@ -10,18 +10,53 @@
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="../assets/styles/styleDog.css">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+
    
 
 
 
 </head>
 <body>
-    <header>
-      <div id="sidebar">
-        <p class="closebtn" onclick="closeSidebar()">&times;</p>
-        <div id="cartContent"></div>
+  <header id="navbarprincipal">
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/img/logooo.png"
+            alt="Logo"
+            class="logo"
+            width="350"
+          />
+        </a>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#acerca-de">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#servicios">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/views/catalogoPerros.html">Catálogo Perros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/views/catalogoGatos.html">Catálogo Gatos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#equipo">Equipo</a>
+          </li>
+        </ul>
+        <ul class="util" id="openSidebar" onclick="openSidebar()">
+          <li><a href="#"><ion-icon name="bag-outline"></ion-icon></a>
+            <span class="number"></span>
+          </li>
+        </ul>
       </div>
-    </header>
+    </nav>
+</header>
 
    <!-- Banner-->
    <div class="banner">
@@ -112,7 +147,7 @@
             <h3>Lo nuevo</h3>
             <span>Blog | 19 Feb 2024 |</span>
               <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eum vero placeat aliquam consequatur esse.
+              Los mejores productos ipsum dolor sit amet consectetur adipisicing elit. Accusamus eum vero placeat aliquam consequatur esse.
               </p>
               <a href="">
                 Leer más<ion-icon name="arrow-forward-outline"></ion-icon>
