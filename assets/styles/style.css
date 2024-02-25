@@ -444,7 +444,7 @@ h2 {
 }
 
 
-/*Componente de barra lateral*/
+/* Componente de barra lateral */
 #sidebar {
   width: 0;
   position: fixed;
@@ -458,13 +458,11 @@ h2 {
 }
 
 #sidebar p {
-  color: black; 
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  cursor: pointer;
+  color: black;
+    position: absolute;
+    top: 6rem;
+    font-size: 9pt;
+    margin-left: 7rem;
 }
 
 #openSidebar {
@@ -472,17 +470,36 @@ h2 {
 }
 
 .closebtn {
-  color: white; 
-}
-.number {
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    padding: 5px;
-    margin-left: 5px;
-}
-h4 {
-  color: #485000;
-  border-bottom: 2px solid #fe982a;
+  color: black;
+  font-size: 36pt;
+  position: relative;
+  left: 17.8rem;
+  cursor: pointer;
 }
 
+/* Estilos específicos para la información en el sidebar */
+#cartContent {
+  padding: 20px; /* Espaciado interno del contenido en el sidebar */
+  color: #333; /* Color del texto */
+}
+
+
+#cartContent img {
+  max-width: 37%;
+  height: auto;
+  border-radius: 2rem;
+  margin-bottom: 10px;
+}
+
+#botonPagar {
+  background-color: #4CAF50;
+  position: absolute;
+  color: white;
+  padding: 0.5rem;
+  left: 5rem;
+
+}
+
+#botonPagar:hover {
+  background-color: #45a049; /* Cambia el color al pasar el ratón sobre el botón de pagar */
+}
