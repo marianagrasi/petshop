@@ -1033,4 +1033,33 @@ button {
     }
 }
 
-
+/*Componente de barra lateral*/
+#sidebar {
+    width: 0;
+    position: fixed;
+    height: 100%;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    top: 0;
+    right: 0; 
+    z-index: 2000;
+  }
+  
+  #sidebar p {
+    color: black; 
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+  
+  #openSidebar {
+    cursor: pointer;
+  }
+  
+  .closebtn {
+    color: white; 
+  }
