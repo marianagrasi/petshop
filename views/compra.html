@@ -1,32 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Compra</title>
-    <link rel="stylesheet" href="../assets/styles/stylesShop.css">
-</head>
-<body>
-    <div id="detallesCompra">
-        <h5 class="subtitulo1">Producto</h5>
-        <h5 class="subtitulo2">Precio</h5>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../assets/styles/stylesShop.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5 class="subtitulo1">Producto</h5>
+          <h5 class="subtitulo2">Precio</h5>
+          <table class="table table-bordered">
+            <tbody id="detallesCompra">
+              <!-- La información del carrito se mostrará aquí -->
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <!-- Formulario de Pago -->
+          <form id="formularioPago">
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" class="form-control" id="nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="correo">Correo:</label>
+              <input type="email" class="form-control" id="correo" required />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" class="form-control" id="telefono" required />
+            </div>
+            <div class="form-group">
+              <label for="tipoTarjeta">Tipo de Tarjeta:</label>
+              <select class="form-control" id="tipoTarjeta" required>
+                <option value="">Selecciona...</option>
+                <option value="debito">Débito</option>
+                <option value="credito">Crédito</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="operadorTarjeta">Operador de Tarjeta:</label>
+              <select class="form-control" id="operadorTarjeta" required>
+                <option value="">Selecciona...</option>
+                <option value="bancolombia">Bancolombia</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <button
+              type="button"
+              class="btn btn-danger"
+              onclick="validarPago()"
+            >
+              Pagar Producto
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
-    <button id="pagarProducto" onclick="realizarPago()">Pagar Producto</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../controllers/sidebar.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Recuperar información del carrito desde localStorage
-            var cartContent = localStorage.getItem('cartContent');
+      document.addEventListener("DOMContentLoaded", function () {
+        // Recuperar información del carrito desde localStorage
+        var cartContent = localStorage.getItem("cartContent");
 
-            // Mostrar la información en la página de compra
-            document.getElementById('detallesCompra').innerHTML += cartContent;
+        // Mostrar la información en la página de compra
+        document.getElementById("detallesCompra").innerHTML += cartContent;
 
-            // Limpiar localStorage después de mostrar la información
-            localStorage.removeItem('cartContent');
-        });
+        // Limpiar localStorage después de mostrar la información
+        localStorage.removeItem("cartContent");
+      });
 
-        function realizarPago() {
-            alert('Tu compra ha sido realizada con éxito.');
+      function validarPago() {
+        // Obtener los valores de los campos del formulario
+        var nombre = document.getElementById("nombre").value;
+        var correo = document.getElementById("correo").value;
+        var telefono = document.getElementById("telefono").value;
+        var tipoTarjeta = document.getElementById("tipoTarjeta").value;
+        var operadorTarjeta = document.getElementById("operadorTarjeta").value;
+
+        // Validar que los campos no estén vacíos
+        if (
+          !nombre ||
+          !correo ||
+          !telefono ||
+          !tipoTarjeta ||
+          !operadorTarjeta
+        ) {
+          alert("Por favor, complete todos los campos obligatorios.");
+          return;
         }
+
+        // Si todos los campos están completos, continuar con el pago
+        realizarPago();
+      }
+
+      function realizarPago() {
+        // Aquí puedes realizar las acciones necesarias al realizar el pago
+        alert("Tu compra ha sido realizada con éxito.");
+
+        window.location.href = "catalogoPerros.html";
+
+        var nombre = (document.getElementById("nombre").value = "");
+        var correo = (document.getElementById("correo").value = "");
+        var telefono = (document.getElementById("telefono").value = "");
+        var tipoTarjeta = (document.getElementById("tipoTarjeta").value = "");
+        var operadorTarjeta = (document.getElementById(
+          "operadorTarjeta"
+        ).value = "");
+      }
     </script>
-</body>
+  </body>
 </html>
