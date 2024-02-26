@@ -1,92 +1,100 @@
+body {
+  background-image: url("/assets/img/fondo.jpeg"); /* Cambia la ruta a la ubicación de tu imagen */
+  background-color: #f890b1; /* Color de fondo */
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen en el fondo */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+}
+
 /* Estilos adicionales para el carrito y la página de compra */
-#cartContent img, #detallesCompra img {
-    width: 20vw;
-    height: 20vw;
-    position: relative;
-    bottom: 3rem;
-    left: 2%;
-    border-radius: 50%;
+#cartContent img,
+#detallesCompra img {
+  width: 14vw;
+  height: 14vw;
+  position: relative;
+  top: 5rem;
+  left: 4%;
+  border-radius: 10%;
 }
 
-#cartContent h3, #detallesCompra h3 {
-    font-size: 22pt;
-    position: relative;
-    left: 26%;
-    bottom: 15rem;
+#cartContent h3,
+#detallesCompra h3 {
+  font-size: 22pt;
+  position: relative;
+  left: 45%;
+  bottom: 8rem;
 }
 
-#cartContent h4, #detallesCompra h4 {
-    font-size: 18pt;
-    position: relative;
-    bottom: 18.5rem;
-    left: 56%;
-
+#cartContent h4,
+#detallesCompra h4 {
+  font-size: 18pt;
+  position: relative;
+  top: 7.5rem;
+  left: 5%;
 }
 
-#cartContent p, #detallesCompra p {
-    font-size: 16pt;
-    position: relative;
-    left: 3%;
-    bottom: 10rem;
+#cartContent p,
+#detallesCompra p {
+  font-size: 16pt;
+  position: relative;
+  left: 45%;
+  bottom: 10rem;
+  width: 50%;
+  word-wrap: break-word;
 }
 
 #detallesCompra {
-    position: relative;
-    top: 3rem;
-    background-color: #f890b1;
-    color: black;
-    height: 46vw;
-    width: auto;
-    padding: 20px; /* Añadido: Espaciado interno */
-    border: 2px solid black; /* Añadido: Borde del cuadro */
-    border-radius: 10px; /* Añadido: Borde redondeado */
+  position: relative;
+  bottom: 5rem;
+  color: black;
+  border: 6px solid black;
 }
 
 /* Ajustes para la posición de la imagen en el carrito */
 #cartContent div {
-    position: relative;
+  position: relative;
 }
 
 #cartContent div img {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    max-width: 80px;
-    height: auto;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  max-width: 80px;
+  height: auto;
 }
 
 /* Estilos para el botón "Pagar Producto" */
 #pagarProducto {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1rem 1rem;
-    font-size: 14pt;
-    border-radius: 3rem;
-    position: absolute;
-    border: none;
-    left: 86%;
-    top: 44rem;
-    cursor: pointer; /* Añadido: Cambia el cursor al pasar por encima */
+  background-color: #ff0051;
+  color: white;
+  padding: 1rem 1rem;
+  font-size: 14pt;
+  border-radius: 3rem;
+  position: absolute;
+  border: none;
+  left: 86%;
+  top: 35rem;
+  cursor: pointer; /* Añadido: Cambia el cursor al pasar por encima */
 }
 
 #pagarProducto:hover {
-    background-color: #45a049;
+  background-color: #ff0051;
 }
 
 /* Estilos para los subtítulos */
 .subtitulo1 {
-    font-size: 24pt;
-    position: relative;
-    left: 8%;
-    font-weight: bold;
+  font-size: 24pt;
+  position: relative;
+  top: 3rem;
+  left: 7%;
+  font-weight: bold;
 }
 
 .subtitulo2 {
-    font-size: 24pt;
-    position: relative;
-    font-weight: bold;
-    margin-bottom: 5px;
-    left: 55%;
-    bottom: 14%;
+  font-size: 24pt;
+  position: relative;
+  font-weight: bold;
+  margin-bottom: 5px;
+  left: 5%;
+  top: 47%;
 }
-
