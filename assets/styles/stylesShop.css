@@ -1,5 +1,5 @@
 body {
-  background-image: url("/assets/img/fondo.jpeg"); /* Cambia la ruta a la ubicación de tu imagen */
+  background-image: url("../img/fondo.jpeg"); /* Cambia la ruta a la ubicación de tu imagen */
   background-color: #f890b1; /* Color de fondo */
   background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
   background-position: center; /* Centra la imagen en el fondo */
@@ -13,7 +13,7 @@ body {
   height: 14vw;
   position: relative;
   top: 5rem;
-  left: 4%;
+  left: 2%;
   border-radius: 10%;
 }
 
@@ -21,25 +21,25 @@ body {
 #detallesCompra h3 {
   font-size: 22pt;
   position: relative;
-  left: 45%;
-  bottom: 8rem;
+  left: 55%;
+  bottom: 12rem;
 }
 
 #cartContent h4,
 #detallesCompra h4 {
   font-size: 18pt;
   position: relative;
-  top: 7.5rem;
+  top: 6rem;
   left: 5%;
 }
 
 #cartContent p,
 #detallesCompra p {
-  font-size: 16pt;
+  font-size: 13pt;
   position: relative;
-  left: 45%;
-  bottom: 10rem;
-  width: 50%;
+  left: 55%;
+  bottom: 14rem;
+  width: 44%;
   word-wrap: break-word;
 }
 
@@ -85,7 +85,7 @@ body {
 .subtitulo1 {
   font-size: 24pt;
   position: relative;
-  top: 3rem;
+  top: 2.5rem;
   left: 7%;
   font-weight: bold;
 }
@@ -96,5 +96,5 @@ body {
   font-weight: bold;
   margin-bottom: 5px;
   left: 5%;
-  top: 47%;
+  top: 51%;
 }
