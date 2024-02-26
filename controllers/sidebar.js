@@ -27,8 +27,8 @@ function agregarAlCarrito(modalNumber) {
   // Verificar si 'cartContent' está presente
   var cartContent = document.getElementById('cartContent');
   if (!cartContent) {
-      console.error("Elemento 'cartContent' no encontrado en el DOM.");
-      return;
+    console.error("Elemento 'cartContent' no encontrado en el DOM.");
+    return;
   }
 
   // Crear un nuevo elemento para mostrar en el sidebar
@@ -55,7 +55,12 @@ function agregarAlCarrito(modalNumber) {
 }
 
 function realizarPago() {
-  // Lógica para realizar el pago, por ejemplo, redirigir a una página de pago.
-  alert('Redirigiendo a la página de pago...');
+  // Obtener información del carrito
+  var cartContent = document.getElementById('cartContent').innerHTML;
+
+  // Almacenar información del carrito en localStorage
+  localStorage.setItem('cartContent', cartContent);
+
+  // Redirigir a la página de compra
   window.location.href = 'compra.html';
 }
