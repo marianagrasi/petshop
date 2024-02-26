@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Compra</title>
+    <link rel="stylesheet" href="../assets/styles/stylesShop.css">
 </head>
 <body>
-    <h1>HOLA MUNDO</h1>
+    <div id="detallesCompra">
+        <h5 class="subtitulo1">Producto</h5>
+        <h5 class="subtitulo2">Precio</h5>
+    </div>
+    <button id="pagarProducto" onclick="realizarPago()">Pagar Producto</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Recuperar información del carrito desde localStorage
+            var cartContent = localStorage.getItem('cartContent');
+
+            // Mostrar la información en la página de compra
+            document.getElementById('detallesCompra').innerHTML += cartContent;
+
+            // Limpiar localStorage después de mostrar la información
+            localStorage.removeItem('cartContent');
+        });
+
+        function realizarPago() {
+            alert('Tu compra ha sido realizada con éxito.');
+        }
+    </script>
 </body>
 </html>
