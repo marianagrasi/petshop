@@ -79,46 +79,69 @@
 
         // Limpiar localStorage después de mostrar la información
         localStorage.removeItem("cartContent");
+
+        // Ocultar el botón de eliminar productos
+        var deleteButtons = document.querySelectorAll('.eliminar');
+        deleteButtons.forEach(button => {
+          button.style.display = 'none';
+        });
       });
 
+
       function validarPago() {
-        // Obtener los valores de los campos del formulario
-        var nombre = document.getElementById("nombre").value;
-        var correo = document.getElementById("correo").value;
-        var telefono = document.getElementById("telefono").value;
-        var tipoTarjeta = document.getElementById("tipoTarjeta").value;
-        var operadorTarjeta = document.getElementById("operadorTarjeta").value;
+  // Obtener los valores de los campos del formulario
+  var nombre = document.getElementById("nombre").value;
+  var correo = document.getElementById("correo").value;
+  var telefono = document.getElementById("telefono").value;
+  var tipoTarjeta = document.getElementById("tipoTarjeta").value;
+  var operadorTarjeta = document.getElementById("operadorTarjeta").value;
 
-        // Validar que los campos no estén vacíos
-        if (
-          !nombre ||
-          !correo ||
-          !telefono ||
-          !tipoTarjeta ||
-          !operadorTarjeta
-        ) {
-          alert("Por favor, complete todos los campos obligatorios.");
-          return;
-        }
+  // Validar que los campos no estén vacíos
+  if (!nombre || !correo || !telefono || !tipoTarjeta || !operadorTarjeta) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Por favor, complete todos los campos obligatorios.'
+    });
+    return;
+  }
 
-        // Si todos los campos están completos, continuar con el pago
-        realizarPago();
-      }
+  // Si todos los campos están completos, continuar con el pago
+  realizarPago();
+}
+
+Swal.fire({
+  title: "Custom animation with Animate.css",
+  showClass: {
+    popup: "animate__animated animate__fadeInUp animate__faster"
+  },
+  hideClass: {
+    popup: "animate__animated animate__fadeOutDown animate__faster"
+  }
+});
 
       function realizarPago() {
-        // Aquí puedes realizar las acciones necesarias al realizar el pago
-        alert("Tu compra ha sido realizada con éxito.");
+  // Aquí puedes realizar las acciones necesarias al realizar el pago
+  Swal.fire({
+    position: "top-end",
+    icon: "success",
+    title: "Tu compra ha sido realizada con éxito",
+    showConfirmButton: false,
+    timer: 1500
+  }).then((result) => {
+    // Limpia los campos del formulario después de realizar el pago
+    document.getElementById("nombre").value = "";
+    document.getElementById("correo").value = "";
+    document.getElementById("telefono").value = "";
+    document.getElementById("tipoTarjeta").value = "";
+    document.getElementById("operadorTarjeta").value = "";
 
-        window.location.href = "catalogoPerros.html";
+    // Redirige a la página de catálogo de perros después de realizar el pago
+    window.location.href = "catalogoPerros.html";
+  });
+}
 
-        var nombre = (document.getElementById("nombre").value = "");
-        var correo = (document.getElementById("correo").value = "");
-        var telefono = (document.getElementById("telefono").value = "");
-        var tipoTarjeta = (document.getElementById("tipoTarjeta").value = "");
-        var operadorTarjeta = (document.getElementById(
-          "operadorTarjeta"
-        ).value = "");
-      }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
