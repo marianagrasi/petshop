@@ -1,0 +1,2 @@
+from analysis.analisisPetshop import analizarPetShop
+analizarPetShop()
