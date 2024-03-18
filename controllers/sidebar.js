@@ -18,11 +18,20 @@ addToCartButtons.forEach(function(button) {
   });
 });
 
+// Variable global para contar la cantidad de productos agregados al carrito
+var contadorProductos = 0;
+
 function agregarAlCarrito(modalNumber) {
-  var nombreProducto = document.querySelector(`.modal${modalNumber} .right h3`).innerText;
-  var precioProducto = document.querySelector(`.modal${modalNumber} .right h4`).innerText;
-  var descripcionProducto = document.querySelector(`.modal${modalNumber} .right p`).innerText;
-  var imagenProducto = document.querySelector(`.modal${modalNumber} .main_image img`).src;
+  var modalSelector = `.modal${modalNumber}`;
+  var nombreProducto = document.querySelector(`${modalSelector} .right h3`).innerText;
+  var precioProducto = document.querySelector(`${modalSelector} .right h4`).innerText;
+  var imagenProducto = document.querySelector(`${modalSelector} .main_image img`).src;
+
+  // Crear el idProducto utilizando el contadorProductos actual
+  var idProducto = `producto${contadorProductos}`;
+
+  // Incrementar contadorProductos para el siguiente producto
+  contadorProductos++;
 
   // Verificar si 'cartContent' está presente
   var cartContent = document.getElementById('cartContent');
@@ -34,25 +43,69 @@ function agregarAlCarrito(modalNumber) {
   // Crear un nuevo elemento para mostrar en el sidebar
   var nuevoElemento = document.createElement('div');
   nuevoElemento.innerHTML = `
-      <div>
+      <div id="${idProducto}" data-producto="${nombreProducto}" data-cantidad="1">
           <img src="${imagenProducto}" alt="${nombreProducto}">
           <h3>${nombreProducto}</h3>
           <h4>${precioProducto}</h4>
-          <p>${descripcionProducto}</p>
+          <button class="eliminar" onclick="eliminarProducto('${idProducto}')" style="background: none; border: none; position: relative;">
+          <img src="../assets/img/Basura.png" alt="Eliminar" style="width: 20px; height: 20px; position: absolute; bottom: 20.5rem; right: 7.5rem;">
+      </button>
       </div>
   `;
 
-  // Limpiar contenido existente y agregar el nuevo elemento al 'cartContent'
-  cartContent.innerHTML = '';
+  // Agregar el nuevo elemento al 'cartContent'
   cartContent.appendChild(nuevoElemento);
 
   // Mostrar el botón de "Pagar"
   var botonPagar = document.getElementById('botonPagar');
   botonPagar.style.display = 'block';
 
+  // Mostrar la alerta de producto añadido
+  Swal.fire({
+    title: "Producto añadido!",
+    icon: "success",
+    confirmButtonText: "<span style='font-size: 20px; color: white; position: relative; right: 0.7rem;'>OK</span>",
+  });
+
   // Cerrar el sidebar después de agregar al carrito
   closeSidebar();
 }
+
+function eliminarProducto(idProducto) {
+  // Mostrar confirmación para eliminar el producto utilizando SweetAlert2
+  Swal.fire({
+    title: '¿Estás seguro?',
+    text: '¿Quieres eliminar este producto del carrito?',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Sí'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      var producto = document.getElementById(idProducto);
+      producto.remove();
+
+      // Verificar si no quedan productos en el carrito y ocultar el botón de pagar
+      var cartContent = document.getElementById('cartContent');
+      var productosEnCarrito = cartContent.querySelectorAll('div[data-producto]');
+      if (productosEnCarrito.length === 0) {
+        var botonPagar = document.getElementById('botonPagar');
+        botonPagar.style.display = 'none';
+      }
+
+      // Mostrar una alerta de éxito utilizando SweetAlert2
+      Swal.fire(
+        '¡Eliminado!',
+        'El producto ha sido eliminado del carrito.',
+        'success'
+      );
+    }
+  });
+}
+
+
+
 
 function realizarPago() {
   // Obtener información del carrito

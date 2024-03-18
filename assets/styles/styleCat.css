@@ -402,7 +402,13 @@ main{
  }
 
 /*Catalogo*/
-img {
+ img {
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.contenedor img {
     width: 320px;
     height: 340px;
     object-fit: cover;
@@ -436,9 +442,6 @@ img {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     border-radius: 20px;
     background-color: #eee;
-}
-.contenedor>div:hover{
-    background-color: #ff0051;
 }
 
 .informacion{
@@ -838,7 +841,7 @@ img {
 h3 {
   color: #af827d;
   margin: 20px 0 20px 0;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 h5,
